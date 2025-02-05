@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - OnePage Bootstrap Template</title>
+  <title>Home Praktikum</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -85,7 +85,7 @@
               </div>
             </div><!--End Icon Box -->
   
-            <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400">
+            <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400" id="oprec">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-command"></i></div>
                 <h4 class="title"><a href="">Open Recruitment</a></h4>
@@ -121,6 +121,11 @@
   <script src="./particles.js"></script>
   <script src="./app.js"></script>
 
+  <script>
+    document.getElementById('oprec').addEventListener("click", () => {
+      window.location.href = '/oprec.html';
+    });
+  </script>
 </body>
 
 </html>
