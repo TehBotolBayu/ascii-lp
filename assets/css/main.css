@@ -2114,4 +2114,14 @@ section,
   }
 }
 
+@media (max-width: 500px) {
+  .hero {
+    overflow: visible;
+    margin-top: 30rem;
+  } 
+  #particles-js{
+    height: 160vh;
+  }
+}
+
 
