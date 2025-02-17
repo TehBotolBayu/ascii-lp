@@ -57,7 +57,7 @@ async function fetchModul(){
     document.getElementById('judul-modul')
         .textContent = nameModul;
 
-    const resposeData = await fetch('http://localhost:5000/api/modul/'+param);
+    const resposeData = await fetch('https://oprecapi2.vercel.app/api/modul/'+param);
     if(resposeData.ok){
         const booksData = await resposeData.json();
         const sortedBooksData = booksData.sort((a, b) => a.name.localeCompare(b.name));
