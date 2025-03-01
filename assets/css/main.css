@@ -2096,3 +2096,22 @@ section,
     overflow: visible;
   }
 }
+
+/* .chatbot-container{
+  position: absolute;
+  top: 0;
+  width: 30rem;
+  left: 0;
+  z-index: 1000;
+}
+
+@media (max-width: 900px) {
+  .chatbot-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.chatbot{
+} */
