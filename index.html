@@ -61,17 +61,25 @@
           </div>
   
           <div class="row gy-4 mt-5">
-            <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100" id="jadwal">
               <div class="icon-box">
-                <div class="icon"><i class="bi bi-easel"></i></div>
+                <div class="icon"><i class="bi bi-calendar-week"></i></div>
                 <h4 class="title"><a href="">Jadwal Praktikum</a></h4>
                 <p class="description">Informasi lengkap mengenai waktu dan tempat pelaksanaan praktikum yang dapat diakses oleh semua praktikan.</p>
               </div>
             </div><!--End Icon Box -->
-  
-            <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="200">
+
+            <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100" id="jadwal-ramadhan">
               <div class="icon-box">
-                <div class="icon"><i class="bi bi-gem"></i></div>
+                <div class="icon"><i class="bi bi-moon"></i></div>
+                <h4 class="title"><a href="">Jadwal Praktikum Ramadhan</a></h4>
+                <p class="description">Informasi lengkap mengenai waktu dan tempat pelaksanaan praktikum yang dapat diakses oleh semua praktikan.</p>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="200"  id="ruangan">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-person-workspace"></i></div>
                 <h4 class="title"><a href="">Pembagian Ruangan</a></h4>
                 <p class="description">Distribusi kelas dan ruangan untuk setiap sesi praktikum sesuai jadwal yang telah ditetapkan.</p>
               </div>
@@ -79,17 +87,9 @@
   
             <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="300" id="modul">
               <div class="icon-box">
-                <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                <div class="icon"><i class="bi bi-book"></i></div>
                 <h4 class="title"><a href="">Modul Praktikum</a></h4>
                 <p class="description">Dokumen pembelajaran yang disediakan oleh Asisten Lab (Aslab) untuk mendukung proses praktikum.</p>
-              </div>
-            </div><!--End Icon Box -->
-  
-            <div role="button" class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400" id="oprec">
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-command"></i></div>
-                <h4 class="title"><a href="">Open Recruitment</a></h4>
-                <p class="description">Kesempatan bagi praktikan yang ingin bergabung menjadi Asisten Lab (Aslab) di bawah organisasi ASCII.</p>
               </div>
             </div><!--End Icon Box -->
           </div>
@@ -122,8 +122,14 @@
   <script src="./app.js"></script>
 
   <script>
-    document.getElementById('oprec').addEventListener("click", () => {
-      window.location.href = '/oprec.html';
+    document.getElementById('jadwal').addEventListener("click", () => {
+      window.location.href = 'https://docs.google.com/spreadsheets/d/1K1DihIvuB01HXBd3YwCd6sVxtoTxsdHgymCnOkrRSxM/edit?usp=drivesdk';
+    });
+    document.getElementById('jadwal-ramadhan').addEventListener("click", () => {
+      window.location.href = 'https://docs.google.com/spreadsheets/d/1GHBr91umC_nu9ViU6BloPVcJDxtSVTbIYm45Y83U61w/edit?usp=sharing';
+    });
+    document.getElementById('ruangan').addEventListener("click", () => {
+      window.location.href = 'https://docs.google.com/spreadsheets/d/1IF6kuZjUZp6DILh64S4BEmLRMZ9FJ-N2flTR5Jc2pkc/edit?usp=drivesdk';
     });
     document.getElementById('modul').addEventListener("click", () => {
       window.location.href = '/modul.html';
